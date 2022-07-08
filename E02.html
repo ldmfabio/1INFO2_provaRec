@@ -8,11 +8,22 @@
     */
 
     //ENTRADA
-
+    //Na próxima linha, a idade do Pet é informada pelo Tutor
+    const idadePet = parseInt(prompt("Informe a idade do Pet:"))
+    //Na próxima linha, o custo da Consulta é informado pelo Tutor
+    const custoConsulta = Number(prompt("Informe o custo da consulta veterinária:"))
+    //Na próxima linha, o custo das Vacinas é informado pelo Tutor
+    const custoVacinas = Number(prompt("Informe o custo da aplicação das vacinas:"))
 
     //PROCESSAMENTO
-
+    //Na próxima linha, calcula-se o custo total em consultas, considerando que o Pet vai uma vez por ano ao veterinário, necessitando, assim, multiplicar pela sua idade
+    const custoTotalConsultas = idadePet * custoConsulta
+    //Na próxima linha, calcula-se o custo total em vacinas, considerando que o Pet vai uma vez por ano ao veterinário, necessitando, assim, multiplicar pela sua idade
+    const custoTotalVacinas = idadePet * custoVacinas
+    //Na próxima linha, calcula-se o custo total do Pet (consultas e vacinas)
+    const custoTotalAnimal = custoTotalConsultas + custoTotalVacinas
 
     //SAÍDA
-
+    //Na próxima linha os dados solicitados são apresentados em tela.
+    document.write(`O custo total em vacinas foi de R$ ${custoTotalVacinas.toFixed(2)} e o custo total em consultas foi de R$ ${custoTotalConsultas.toFixed(2)}. O custo total do Pet, ao longo de sua vida, foi de R$ ${custoTotalAnimal.toFixed(2)}.`)
 </script>

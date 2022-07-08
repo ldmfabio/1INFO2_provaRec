@@ -7,11 +7,20 @@
     */
 
     //ENTRADA
-
-
+    //Na próxima linha, o usuário informará qual é o custo da refeição diária
+    const valorComida = Number(prompt("Informe o valor da comida:"))
+    //Na próxima linha, o usuário informará qual é o custo da bebida diária
+    const valorBebida = Number(prompt("Informe o valor da Bebida:"))
+    
     //PROCESSAMENTO
-
+    //Na próxima linha, o custo toal da comida é calculado (considerando os 22 dias úteis do mês)
+    const valorMensalComida = valorComida * 22
+    //Na próxima linha, o custo toal da bebida é calculado (considerando os 22 dias úteis do mês)
+    const valorMensalBebida = valorBebida * 22
+    //Na próxima linha, o custo mensal das refeições (comida e bebida) é calculado
+    const valorMensal = valorMensalComida + valorMensalBebida
 
     //SAÍDA
-
+    //Na próxima linha os dados solicitados são apresentados na tela.
+    document.write(`O gasto com comida é de R$ ${valorMensalComida.toFixed(2)} e o valor gasto com bebida é de R$ ${valorMensalBebida.toFixed(2)}. O gasto mensal com as refeições é de R$ ${valorMensal.toFixed(2)}.`)
 </script>
